@@ -8,4 +8,12 @@ class BikesController < ApplicationController
     bike = Bike.find_by(id: params[:id])
     render json: bike.as_json
   end
+
+  def create
+    bike = Bike.new
+    bike.brand = params[:brand]
+    bike.price = params[:price]
+    bike.save
+    render json: bike.as_json
+  end
 end

@@ -4,3 +4,13 @@ GET http://localhost:3000/bikes
 ###
 
 GET http://localhost:3000/bikes/1
+
+###
+
+POST http://localhost:3000/bikes
+Content-Type: application/json
+
+{
+  "brand": "trickster",
+  "price": 220
+}
