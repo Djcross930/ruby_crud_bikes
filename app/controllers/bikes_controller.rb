@@ -25,5 +25,10 @@ class BikesController < ApplicationController
     render json: bike.as_json
   end
 
+  def destroy
+    bike = Bike.find_by(id: params[:id])
+    bike.destroy
+    render json: {message: "Bike destroyed"}
+  end
 
 end

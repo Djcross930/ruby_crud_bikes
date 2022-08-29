@@ -21,3 +21,5 @@ Content-Type: application/json
 {
   "price": 350
 }
+###
+DELETE http://localhost:3000/bikes/1
