@@ -1,1 +1,6 @@
 GET http://localhost:3000/bikes
+
+
+###
+
+GET http://localhost:3000/bikes/1
