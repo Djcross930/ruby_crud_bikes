@@ -16,4 +16,14 @@ class BikesController < ApplicationController
     bike.save
     render json: bike.as_json
   end
+
+  def update
+    bike = Bike.find_by(id: params[:id])
+    bike.brand = params[:brand] || bike.brand
+    bike.price = params[:price] || bike.price
+    bike.save
+    render json: bike.as_json
+  end
+
+
 end

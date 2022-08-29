@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/bikes" => "bikes#index"
   get "/bikes/:id" => "bikes#show"
   post "/bikes" => "bikes#create"
+  patch "/bikes/:id" => "bikes#update"
 end

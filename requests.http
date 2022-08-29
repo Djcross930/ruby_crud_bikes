@@ -14,3 +14,10 @@ Content-Type: application/json
   "brand": "trickster",
   "price": 220
 }
+###
+PATCH http://localhost:3000/bikes/1
+Content-Type: application/json
+
+{
+  "price": 350
+}
